@@ -9,13 +9,16 @@ export default function Home() {
       <nav className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur border-b" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <Image
-              src="/duela.png"
-              alt="DuelaCred Logo"
-              width={64}
-              height={64}
-              className="h-14 w-auto drop-shadow-lg"
-            />
+            <a href="#" aria-label="Home">
+              <Image
+                src="/duela.png"
+                alt="DuelaCred Logo"
+                width={250}        // 2x of displayed 96px for sharper Retina rendering
+                height={250}
+                className="h-24 w-auto drop-shadow-xl"
+                priority
+              />
+            </a>
           </div>
           <div className="hidden md:flex gap-8 text-[#1E5BB8]">
             <a href="#features" className="hover:underline transition">Features</a>
@@ -51,7 +54,7 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#1E5BB8] text-center mb-16">Why Choose DuelaCred?</h2>
+                      <div className="text-center text-[#333333]">© {new Date().getFullYear()} DuelaCred. All rights reserved.</div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -147,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-700 py-12 px-6 bg-slate-900/50">
+      <footer className="border-t border-gray-100 py-12 px-6 bg-white">
         <style>{`
           a.footer-link {
             color: currentColor;
@@ -161,27 +164,27 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="font-bold mb-4" style={{ color: '#F4B400' }}>DuelaCred</h3>
-              <p className="text-slate-400">Making credit accessible, transparent, and fair for everyone.</p>
+              <p className="text-[#333333]">Making credit accessible, transparent, and fair for everyone.</p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-slate-400">
+              <h4 className="text-[#1E5BB8] font-semibold mb-4">Product</h4>
+              <ul className="space-y-2 text-[#333333]">
                 <li><a href="#features" className="footer-link">Features</a></li>
                 <li><a href="#" className="footer-link">How It Works</a></li>
                 <li><a href="#" className="footer-link">FAQ</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-slate-400">
+              <h4 className="text-[#1E5BB8] font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-[#333333]">
                 <li><a href="#" className="footer-link">About Us</a></li>
                 <li><a href="#" className="footer-link">Blog</a></li>
                 <li><a href="#" className="footer-link">Careers</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-slate-400">
+              <h4 className="text-[#1E5BB8] font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-[#333333]">
                 <li><a href="#" className="footer-link">Privacy Policy</a></li>
                 <li><a href="#" className="footer-link">Terms of Service</a></li>
                 <li><a href="#" className="footer-link">Contact Support</a></li>

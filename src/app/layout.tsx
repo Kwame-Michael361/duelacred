@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Get instant approval for credit you trust. Transparent rates, flexible terms, and expert support. Apply in 5 minutes.",
   icons: {
     icon: "/duela.png",
+    shortcut: "/duela.png",
+    apple: "/duela.png",
   },
 };
 
